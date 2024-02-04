@@ -1,3 +1,5 @@
+<p id="notice"><%= notice %></p>
+
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
@@ -10,6 +12,12 @@
         </tr>
     </thead>
     <tbody>
-        <%= render @produtos%>%
+        <%= render @produtos_por_departamento %>
     </tbody>
 </table>
+
+
+<%= link_to "Cancelar", departamentos_path, class: "btn btn-warning" %>
+<%= link_to "Deletar departamento", @departamento, method: :delete, class: "btn btn-danger" %>
+
+
