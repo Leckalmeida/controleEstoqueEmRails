@@ -1,24 +1,40 @@
-# README
+# Projeto1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descrição
+Este é um projeto Ruby on Rails simples para uma loja.
 
-Things you may want to cover:
+## Requisitos do Sistema
+- [Ruby](https://www.ruby-lang.org/) (versão 3.3.0)
+- [Ruby on Rails](https://rubyonrails.org/) (versão 7.1.3)
+- [SQLite](https://www.sqlite.org/) (ou outro banco de dados de sua escolha)
 
-* Ruby version
+## Configuração do Ambiente
+1. **Instale as dependências do projeto:**
+   ```bash
+   bundle install
+   
+2. **Crie o banco de dados e execute as migrações:**
+  rails db:create
+  rails db:migrate
 
-* System dependencies
+4. **Inicie o servidor rails**
+   rails server
 
-* Configuration
+5. **Abra o navegador e acesse http://localhost:3000 para visualizar o aplicativo.**
 
-* Database creation
 
-* Database initialization
+## Funcionalidades
+- Cadastro de produtos
+- Exibição de produtos com desconto
+- Remoção de produtos
 
-* How to run the test suite
+## Estrutura do Projeto
+- `app/`: Contém os controladores, modelos e visualizações.
+- `config/`: Configurações do projeto.
+- `db/`: Migrações e esquemas do banco de dados.
+- `public/`: Recursos estáticos.
+- `test/`: Testes automatizados.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contribuição
+Sinta-se à vontade para contribuir com correções, melhorias ou novas funcionalidades. Crie um fork do projeto, faça suas alterações e envie uma solicitação de pull.
 
-* Deployment instructions
-
-* ...
